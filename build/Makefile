@@ -129,6 +129,19 @@ Lab4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/build
 .PHONY : Lab4/fast
 
+#=============================================================================
+# Target rules for targets named task15_cosh
+
+# Build rule for target.
+task15_cosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task15_cosh
+.PHONY : task15_cosh
+
+# fast build rule for target.
+task15_cosh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task15_cosh.dir/build.make CMakeFiles/task15_cosh.dir/build
+.PHONY : task15_cosh/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +166,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/task15_cosh.o: src/task15_cosh.cpp.o
+.PHONY : src/task15_cosh.o
+
+# target to build an object file
+src/task15_cosh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task15_cosh.dir/build.make CMakeFiles/task15_cosh.dir/src/task15_cosh.cpp.o
+.PHONY : src/task15_cosh.cpp.o
+
+src/task15_cosh.i: src/task15_cosh.cpp.i
+.PHONY : src/task15_cosh.i
+
+# target to preprocess a source file
+src/task15_cosh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task15_cosh.dir/build.make CMakeFiles/task15_cosh.dir/src/task15_cosh.cpp.i
+.PHONY : src/task15_cosh.cpp.i
+
+src/task15_cosh.s: src/task15_cosh.cpp.s
+.PHONY : src/task15_cosh.s
+
+# target to generate assembly for a file
+src/task15_cosh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task15_cosh.dir/build.make CMakeFiles/task15_cosh.dir/src/task15_cosh.cpp.s
+.PHONY : src/task15_cosh.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Lab4"
+	@echo "... task15_cosh"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/task15_cosh.o"
+	@echo "... src/task15_cosh.i"
+	@echo "... src/task15_cosh.s"
 .PHONY : help
 
 
