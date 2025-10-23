@@ -1,4 +1,0 @@
-/home/gregory/lab4-part2/build/CMakeFiles/Lab4.dir
-/home/gregory/lab4-part2/build/CMakeFiles/task15_cosh.dir
-/home/gregory/lab4-part2/build/CMakeFiles/edit_cache.dir
-/home/gregory/lab4-part2/build/CMakeFiles/rebuild_cache.dir

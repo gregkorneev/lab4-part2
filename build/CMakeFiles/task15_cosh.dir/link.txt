@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/task15_cosh.dir/link.d CMakeFiles/task15_cosh.dir/src/task15_cosh.cpp.o -o task15_cosh

@@ -1,17 +1,19 @@
-cmake_minimum_required(VERSION 3.10)
-project(Lab4)
+cmake_minimum_required(VERSION 3.20)
+project(Task22_Frac CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Создание исполняемого файла
-add_executable(Lab4 src/main.cpp)
+if (MSVC)
+  add_compile_options(/W4)
+else()
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-# Включение директорий с заголовками
-target_include_directories(Lab4 PRIVATE include)
+add_executable(task22_frac src/task22_frac_simple.cpp)
 
-# Флаги компиляции
-target_compile_options(Lab4 PRIVATE -Wall -Wextra -O2)
-
-# --- Индивидуальное задание 15: cosh(x) на [0,1] ---
-add_executable(task15_cosh src/task15_cosh.cpp)
-# при необходимости добавь сюда include_directories(...) или compile options
+# Бинарник будет в build/bin/
+set_target_properties(task22_frac
+  PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
