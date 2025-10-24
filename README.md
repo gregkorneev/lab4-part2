@@ -2,9 +2,7 @@
 
 ## Build
 ```
-mkdir -p build && cd build
-cmake ..
-cmake --build . -j
+rm -rf build && сmake -B build && cmake --build build && cd ./build/bin && ./Lab4 && ./task15_cosh
 ```
 
 ## Run

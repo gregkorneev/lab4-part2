@@ -3,3 +3,4 @@
 *.user
 *.DS_Store
 *.csv
+/plots
